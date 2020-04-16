@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginDemo.LoginPage">
+    <ContentPage.Content>
+        <Grid VerticalOptions="FillAndExpand">
+            <!--Manage all content except Activity indicator in below stacklayout-->
+            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="Transparent"  >
+                <!--Implicit styling-->
+                <StackLayout.Resources>
+                    <ResourceDictionary>
+                        <Style TargetType="Entry">
+                            <Setter Property="Margin"  Value="22,0,22,0"/>
+                        </Style>
+                    </ResourceDictionary>
+                </StackLayout.Resources>
+
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <Image HeightRequest="120" WidthRequest="120" Source="LoginLogo.png" VerticalOptions="Start"/>
+                    <Label Text="SAMPLE" HorizontalTextAlignment="Center" FontAttributes="None" FontSize="Title" TextColor="Black" Margin="0,0,0,32"/>
+                    <Entry x:Name="userNameEntry" Completed="Username_Entry_Completed" Placeholder="Username" Text="{Binding UserText}"/>
+                    <Entry x:Name="passwordEntry" Completed="Password_Entry_Completed" Placeholder="Password"/>
+                    <Button x:Name="SignInBtn" Text="Sign In" BackgroundColor="LightBlue" Margin="22,12,22,0" Clicked="SignInHandler"/>
+                    <Button x:Name="ResetBtn" Text="Reset your password?" HeightRequest="32" WidthRequest="150" HorizontalOptions="Center" FontSize="Micro" TextColor="Black" BackgroundColor="White" Clicked="ResetHandler"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Copyright © 2020 Ankur. All rights reserved." HorizontalOptions="Center" VerticalOptions="End" FontSize="Small" Margin="0,12,0,20" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <!--this will work a layer on above stacklayout, to show full screen indicator-->
+            <!--it is not visible in begining as it will obstruct interaction of layer below it, So it is set visible conditionally when login is tapped-->
+            <StackLayout x:Name="activityIndicator" VerticalOptions="CenterAndExpand" IsVisible="false">
+                <ActivityIndicator x:Name="loginActivityIndicator" Color="Blue" IsRunning="False"/>
+            </StackLayout>
+        </Grid>
+
+
+    </ContentPage.Content>
+
+</ContentPage>

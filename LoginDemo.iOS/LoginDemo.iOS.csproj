@@ -140,5 +140,8 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\LoginLogo.png" />
+    <BundleResource Include="Resources\FaceBookWall.png" />
+    <BundleResource Include="Resources\placeholder.png" />
+    <BundleResource Include="Resources\search.png" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginDemo.Views.LoginPageAbsoluteLayout">
+    <ContentPage.Content>
+        <!--Main Layout constraint-->
+        <AbsoluteLayout>
+            <!--Constraint for top header image-->
+            <AbsoluteLayout BackgroundColor="Green" AbsoluteLayout.LayoutBounds="0,0,1,0.3" AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional,YProportional">
+                <Image Source="FaceBookWall.png" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional"/>
+            </AbsoluteLayout>
+
+            <!--Constraint for all content below header image-->
+            <AbsoluteLayout BackgroundColor="Gold" AbsoluteLayout.LayoutBounds="0,1,1,0.7" AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional,YProportional">
+                <!--Container for language change buttons-->
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,24" AbsoluteLayout.LayoutFlags="WidthProportional">
+                    <Button FontSize="10" BackgroundColor="Transparent" TextColor="Black" Text="Punjabi" AbsoluteLayout.LayoutBounds="0.5,0,60,24" AbsoluteLayout.LayoutFlags="XProportional"/>
+                    <Button FontSize="10" BackgroundColor="Transparent" TextColor="Black" Text="Hindi" AbsoluteLayout.LayoutBounds="0.3,0,48,24" AbsoluteLayout.LayoutFlags="XProportional"/>
+                    <Button FontSize="10" BackgroundColor="Transparent" TextColor="Blue" Text="More..." AbsoluteLayout.LayoutBounds="0.7,0,48,24" AbsoluteLayout.LayoutFlags="XProportional"/>
+                </AbsoluteLayout>
+
+                <AbsoluteLayout BackgroundColor="Red" AbsoluteLayout.LayoutBounds="0,24,1,1" AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional">
+                    <Entry Placeholder="Phone or Email" AbsoluteLayout.LayoutBounds="0.5,64,0.8,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"/>
+                    <Entry Placeholder="Password" AbsoluteLayout.LayoutBounds="0.5,116,0.8,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"/>
+                    <Button Text="Login" BackgroundColor="Blue" TextColor="NavajoWhite" AbsoluteLayout.LayoutBounds="0.5,168,0.8,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"/>
+                    <Button Text="Forgot Password?" BackgroundColor="Transparent" TextColor="Blue" AbsoluteLayout.LayoutBounds="0.5,212,0.8,40" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"/>
+                    <AbsoluteLayout BackgroundColor="Green" AbsoluteLayout.LayoutBounds="0,252,1,36" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional">
+                        <BoxView BackgroundColor="LightGray" HeightRequest="2" AbsoluteLayout.LayoutBounds="0.1,18,0.4,1" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"/>
+                        <Label Text="Or" TextColor="LightGray" AbsoluteLayout.LayoutBounds="0.5,8,20,16" AbsoluteLayout.LayoutFlags="XProportional"/>
+                        <BoxView BackgroundColor="LightGray" HeightRequest="2" AbsoluteLayout.LayoutBounds="0.9,18,0.4,1" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional"/>
+                    </AbsoluteLayout>
+                    <Button Text="Create New facebook Account" TextColor="White" BackgroundColor="Green" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" FontSize="12" Padding="12,0,12,0" AbsoluteLayout.LayoutBounds="0.5,300,250,36" AbsoluteLayout.LayoutFlags="XProportional"/>
+                </AbsoluteLayout>
+
+            </AbsoluteLayout>
+        </AbsoluteLayout>
+
+
+    </ContentPage.Content>
+</ContentPage>
+
+<!--<AbsoluteLayout BackgroundColor="Red" AbsoluteLayout.LayoutBounds="0,24,1,1" AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional">
+
+<AbsoluteLayout>
+    <Label Text="I'm centered on iPhone 4 but no other device"
+        AbsoluteLayout.LayoutBounds="115,150,100,100" LineBreakMode="WordWrap"/>
+    <Label BackgroundColor="LightCoral" Text="I'm bottom center on every device."
+        AbsoluteLayout.LayoutBounds=".5,1,.5,.1" AbsoluteLayout.LayoutFlags="All"
+        LineBreakMode="WordWrap"/>
+    <BoxView Color="Olive"  AbsoluteLayout.LayoutBounds="1,.5, 25, 100"
+        AbsoluteLayout.LayoutFlags="PositionProportional"/>
+    <BoxView Color="Red" AbsoluteLayout.LayoutBounds="0,.5,25,100"
+        AbsoluteLayout.LayoutFlags="PositionProportional"/>
+    <BoxView Color="Blue" AbsoluteLayout.LayoutBounds=".5,0,100,25"
+        AbsoluteLayout.LayoutFlags="PositionProportional"/>
+</AbsoluteLayout>-->

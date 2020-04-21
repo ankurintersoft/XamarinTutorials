@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginDemo.Views.ListViewDemo">
+    <StackLayout BackgroundColor="Transparent">
+        <StackLayout Margin="24,30,24,20" BackgroundColor="Transparent" VerticalOptions="CenterAndExpand">
+            <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" BackgroundColor="Transparent" Margin="0" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Label BackgroundColor="Transparent" Text="Messages" FontSize="32" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" WidthRequest="200" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End" VerticalOptions="Center">
+                    <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent"/>
+                </StackLayout>
+            </StackLayout>
+
+            <!--<Label BackgroundColor="Red" Text="Messages" FontSize="32" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" WidthRequest="200" VerticalOptions="Center"/>
+            <StackLayout HorizontalOptions="End" VerticalOptions="Center" BackgroundColor="Brown">
+                <Image Source="search" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Pink"/>
+            </StackLayout>-->
+        </StackLayout>
+        <StackLayout>
+            <ListView x:Name="listVw" ItemsSource="{Binding Monkeys}" Header="{Binding Intro}" Footer="{Binding Summary}" HasUnevenRows="True" HorizontalOptions="FillAndExpand" SeparatorVisibility="None">
+                <ListView.HeaderTemplate>
+                    <DataTemplate>
+
+                        <StackLayout Orientation="Horizontal" Margin="24,5,5,10">
+                            <Label Text="Pinned" BackgroundColor="Transparent" TextColor="DimGray" FontSize="16"/>
+                        </StackLayout>
+
+
+                    </DataTemplate>
+                </ListView.HeaderTemplate>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="Transparent" Margin="24,0,10,0">
+                                <Frame Margin="0" Padding="0" CornerRadius="14" BackgroundColor="Transparent">
+                                    <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" BackgroundColor="Transparent" Margin="0" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                                            <Image WidthRequest="60" HeightRequest="60" Source="placeholder" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+                                            <StackLayout VerticalOptions="CenterAndExpand" Orientation="Vertical" BackgroundColor="Transparent">
+                                                <Label BackgroundColor="Transparent" Text="{Binding Name}" VerticalTextAlignment="Center" FontSize="Medium" FontAttributes="Bold" TextColor="Black" Margin="16,12,0,0" />
+                                                <StackLayout Orientation="Horizontal" Margin="16,0,0,0">
+                                                    <Label BackgroundColor="Transparent" Text="{Binding message}" VerticalTextAlignment="Center" FontSize="Small" FontAttributes="Bold" Margin="0,0,0,18"/>
+                                                    <Label BackgroundColor="Transparent" Text="." VerticalTextAlignment="Center" FontSize="12" Margin="0,0,0,22"/>
+                                                    <Label BackgroundColor="Transparent" Text="{Binding receivedStamp}" VerticalTextAlignment="Center" FontSize="10" Margin="0,0,0,18"/>
+                                                </StackLayout>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="End" VerticalOptions="Center">
+                                            <Button Text="{Binding messageCount}" FontSize="14" TextColor="White" BackgroundColor="Blue" VerticalOptions="Center" HorizontalOptions="End" HeightRequest="22" WidthRequest="22" CornerRadius="11" Padding="0" Margin="10"/>
+                                        </StackLayout>
+                                    </StackLayout>
+
+                                </Frame>
+                                <BoxView BackgroundColor="Black" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="0.4" Margin="24,0,10,0"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginDemo.Views.ListViewPage">
+    <ListView x:Name="listVw" ItemsSource="{Binding Monkeys}" Header="{Binding Intro}" Footer="{Binding Summary}">
+        <ListView.HeaderTemplate>
+            <DataTemplate>
+                <StackLayout Orientation="Horizontal" Padding="10,5,5,10" BackgroundColor="LightGray">
+                    <Label Text="~~"/>
+                    <Label Text="{Binding .}"/>
+                    <Label Text="~~"/>
+                </StackLayout>
+            </DataTemplate>
+        </ListView.HeaderTemplate>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+                        <StackLayout Padding="5,0,0,0" VerticalOptions="StartAndExpand" Orientation="Vertical">
+                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" FontSize="Medium" />
+                            <Label Text="{Binding Description}" VerticalTextAlignment="Center" FontSize="Small" />
+                        </StackLayout>
+                        <Button Text="X" BackgroundColor="Gray" HorizontalOptions="EndAndExpand" CommandParameter="{Binding Name}"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+    </ListView>
+</ContentPage>

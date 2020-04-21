@@ -1,28 +1,24 @@
 ﻿<Properties StartupConfiguration="{105B74E0-53F2-46D7-BB74-C2AACA380E82}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LoginDemo/Views/ListViewDemo.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoginDemo/Views/ListViewDemo.xaml.cs">
     <Files>
-      <File FileName="LoginDemo/Views/ListViewPage.xaml" Line="12" Column="35" />
-      <File FileName="LoginDemo/Views/ListViewPage.xaml.cs" Line="8" Column="17" />
-      <File FileName="LoginDemo/Views/ListViewDemo.xaml.cs" Line="28" Column="46" />
-      <File FileName="LoginDemo/Views/ListViewDemo.xaml" Line="8" Column="10" />
+      <File FileName="LoginDemo/Views/ListViewDemo.xaml.cs" Line="23" Column="24" />
+      <File FileName="LoginDemo/Views/ListViewDemo.xaml" Line="6" Column="34" />
+      <File FileName="LoginDemo/App.xaml.cs" Line="14" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LoginDemo" expanded="True">
             <Node name="LoginDemo" expanded="True">
+              <Node name="Models" selected="True" />
               <Node name="Views" expanded="True">
                 <Node name="ListViewDemo.xaml" expanded="True" />
-                <Node name="ListViewPage.xaml" expanded="True" />
-                <Node name="LoginPageAbsoluteLayout.xaml" expanded="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
             </Node>
             <Node name="LoginDemo.Android" expanded="True">
               <Node name="Resources" expanded="True">
-                <Node name="drawable" expanded="True">
-                  <Node name="placeholder.png" selected="True" />
-                </Node>
+                <Node name="drawable" expanded="True" />
                 <Node name="values" expanded="True" />
               </Node>
             </Node>
@@ -32,16 +28,15 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.LoginDemo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4A33E504-76E4-40D9-9792-70D33992FAF7" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/osx/Desktop/Xamarin/Learnings/XamarinTutorials/LoginDemo/Views/ListViewGrouped.xaml.cs" relfile="LoginDemo/Views/ListViewGrouped.xaml.cs" line="69" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.LoginDemo.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.pixel_2_pie_9_0_-_api_28" />

@@ -3,7 +3,7 @@
     <ContentPage.Content>
         <Grid VerticalOptions="FillAndExpand">
             <!--Manage all content except Activity indicator in below stacklayout-->
-            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="Transparent"  >
+            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
                 <!--Implicit styling-->
                 <StackLayout.Resources>
                     <ResourceDictionary>
@@ -32,8 +32,6 @@
                 <ActivityIndicator x:Name="loginActivityIndicator" Color="Blue" IsRunning="False"/>
             </StackLayout>
         </Grid>
-
-
     </ContentPage.Content>
 
 </ContentPage>

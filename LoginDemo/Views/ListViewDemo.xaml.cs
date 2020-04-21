@@ -29,7 +29,7 @@ namespace LoginDemo.Views
                 new Vehicle {Name="Rahish", message="Let's have a call in 10mins", messageCount = "2", receivedStamp = "2m"},
                 new Vehicle {Name="Ankur", message="see you soon", messageCount = "10", receivedStamp = "yesterday"},
                 new Vehicle {Name="Inder", message="Check mail please", messageCount = "20", receivedStamp = "2d"},
-                new Vehicle {Name="Amrit", message="Where are you", messageCount = "1", receivedStamp = ""},
+                new Vehicle {Name="Amrit", message="Where are you", messageCount = "1", receivedStamp = "1w"},
                 new Vehicle {Name="e", message="Alright", messageCount = "", receivedStamp = "6m"},
                 new Vehicle {Name="f", message="fff", messageCount = "7", receivedStamp = "4d"},
                 new Vehicle {Name="g", message="ggg", messageCount = "", receivedStamp = "6d"},

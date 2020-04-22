@@ -1,29 +1,23 @@
-﻿<Properties StartupConfiguration="{105B74E0-53F2-46D7-BB74-C2AACA380E82}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LoginDemo/Views/ListViewDemo.xaml.cs">
+﻿<Properties StartupConfiguration="{01EFA5AA-A9B5-452B-A21B-6E624D560EE5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoginDemo/Models/ChatListingModel.cs">
     <Files>
-      <File FileName="LoginDemo/Views/ListViewDemo.xaml.cs" Line="23" Column="24" />
-      <File FileName="LoginDemo/Views/ListViewDemo.xaml" Line="6" Column="34" />
-      <File FileName="LoginDemo/App.xaml.cs" Line="14" Column="1" />
+      <File FileName="LoginDemo/Models/ChatListingModel.cs" Line="59" Column="10" />
+      <File FileName="LoginDemo/Views/EnterDetailPage.xaml.cs" Line="10" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LoginDemo" expanded="True">
             <Node name="LoginDemo" expanded="True">
-              <Node name="Models" selected="True" />
+              <Node name="Models" expanded="True">
+                <Node name="ChatListingModel.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
+                <Node name="EnterDetailPage.xaml" expanded="True" />
                 <Node name="ListViewDemo.xaml" expanded="True" />
+                <Node name="ListViewPage.xaml" expanded="True" />
+                <Node name="LoginPage.xaml" expanded="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
-            </Node>
-            <Node name="LoginDemo.Android" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="drawable" expanded="True" />
-                <Node name="values" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="LoginDemo.iOS" expanded="True">
-              <Node name="Resources" expanded="True" />
             </Node>
           </Node>
         </State>

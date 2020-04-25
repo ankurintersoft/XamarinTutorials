@@ -32,7 +32,7 @@ namespace LoginDemo.Views
 
         async void SignInHandlerMV(object sender, EventArgs args)
         {
-            await this.Navigation.PushAsync(new LoginPage());
+            await this.Navigation.PushAsync(new LoginDemo.LoginPage());
         }
 
         void ResetHandlerMV(object sender, EventArgs args)

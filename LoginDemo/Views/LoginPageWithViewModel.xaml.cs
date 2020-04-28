@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using LoginDemo.Models;
+using LoginDemo.Services;
 using Xamarin.Forms;
 
 namespace LoginDemo.Views
@@ -11,7 +12,7 @@ namespace LoginDemo.Views
 
         public LoginPageWithViewModel()
         {
-            loginViewModel = new LoginViewModel("ankur.int@mail.com", "123456789");
+            loginViewModel = new LoginViewModel("ankur.int@mail.com", "123456789", ApiService.Instance);
 
             InitializeComponent();
             BindingContext = loginViewModel;
@@ -30,9 +31,9 @@ namespace LoginDemo.Views
             System.Diagnostics.Debug.WriteLine("*****Gone*****");
         }
 
-        async void SignInHandlerMV(object sender, EventArgs args)
+        void SignInHandlerMV(object sender, EventArgs args)
         {
-            await this.Navigation.PushAsync(new LoginPage());
+            //await this.Navigation.PushAsync(new LoginDemo.LoginPage());
         }
 
         void ResetHandlerMV(object sender, EventArgs args)

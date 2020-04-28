@@ -8,7 +8,6 @@ namespace LoginDemo.Views
     public partial class EnterDetailPage : ContentPage
     {
         public event EventHandler<ChatDetail> PlusButtonEventHandler;
-        //public event EventHandler PlusButtonEventHandler;
 
         public EnterDetailPage()
         {
@@ -20,10 +19,7 @@ namespace LoginDemo.Views
             Console.WriteLine(" name " + nameField.Text + " message " + messageField.Text + " count " + countField.Text);
             var cd = new ChatDetail { Name = nameField.Text, Message = messageField.Text, MessageCount = countField.Text, ReceivedStamp = "yesterday" };
             //Monkeys.Add(cd);
-            if (PlusButtonEventHandler != null)
-            {
-                PlusButtonEventHandler(this, cd);
-            }
+            PlusButtonEventHandler?.Invoke(this, cd);
 
             await Navigation.PopModalAsync();
         }

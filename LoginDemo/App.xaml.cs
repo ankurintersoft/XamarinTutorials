@@ -9,7 +9,7 @@ namespace LoginDemo
         public App()
         {
             InitializeComponent();
-            MainPage = new Views.ListViewDemo();/*new NavigationPage(new Views.LoginPageAbsoluteLayout());*/
+            MainPage = new Views.LoginPageWithViewModel();/*new NavigationPage(new Views.LoginPageAbsoluteLayout());*/
         }
 
         protected override void OnStart()

@@ -1,35 +1,47 @@
 ﻿<Properties StartupConfiguration="{01EFA5AA-A9B5-452B-A21B-6E624D560EE5}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LoginDemo/Models/ChatListingModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoginDemo.iOS/Info.plist">
     <Files>
-      <File FileName="LoginDemo/Models/ChatListingModel.cs" Line="59" Column="10" />
-      <File FileName="LoginDemo/Views/EnterDetailPage.xaml.cs" Line="10" Column="34" />
+      <File FileName="LoginDemo/Views/LoginPageWithViewModel.xaml.cs" Line="41" Column="87" />
+      <File FileName="LoginDemo/Models/LoginViewModel.cs" />
+      <File FileName="LoginDemo/Models/LoginModel.cs" />
+      <File FileName="LoginDemo/Interface/IApi.cs" />
+      <File FileName="LoginDemo/Services/ApiService.cs" />
+      <File FileName="LoginDemo/Services/CallAPI.cs" Line="2" Column="30" />
+      <File FileName="LoginDemo/AssemblyInfo.cs" Line="4" Column="60" />
+      <File FileName="LoginDemo.iOS/Entitlements.plist" />
+      <File FileName="LoginDemo.iOS/Info.plist" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LoginDemo" expanded="True">
             <Node name="LoginDemo" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="ChatListingModel.cs" selected="True" />
-              </Node>
-              <Node name="Views" expanded="True">
-                <Node name="EnterDetailPage.xaml" expanded="True" />
-                <Node name="ListViewDemo.xaml" expanded="True" />
-                <Node name="ListViewPage.xaml" expanded="True" />
-                <Node name="LoginPage.xaml" expanded="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="LoginDemo.iOS" expanded="True">
+              <Node name="Info.plist" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.LoginDemo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4A33E504-76E4-40D9-9792-70D33992FAF7" />
+  <MonoDevelop.Ide.ItemProperties.LoginDemo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.0B04A4BC-0EC2-487B-8F1D-735EE1C7ED01" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/osx/Desktop/Xamarin/Learnings/XamarinTutorials/LoginDemo/Views/ListViewGrouped.xaml.cs" relfile="LoginDemo/Views/ListViewGrouped.xaml.cs" line="69" column="1" />
+      <Breakpoint file="/Users/osx/Desktop/Xamarin/Learnings/XamarinTutorialsapidone/LoginDemo/Views/ListViewGrouped.xaml.cs" relfile="LoginDemo/Views/ListViewGrouped.xaml.cs" line="69" column="1" />
+      <Breakpoint file="/Users/osx/Desktop/Xamarin/Learnings/XamarinTutorialsapidone/LoginDemo/Models/LoginModel.cs" relfile="LoginDemo/Models/LoginModel.cs" line="34" column="1" />
+      <Breakpoint file="/Users/osx/Desktop/Xamarin/Learnings/XamarinTutorialsapidone/LoginDemo/Services/ApiService.cs" relfile="LoginDemo/Services/ApiService.cs" line="30" column="1" />
+      <Breakpoint file="/Users/osx/Desktop/Xamarin/Learnings/XamarinTutorialsapidone/LoginDemo/Services/ApiService.cs" relfile="LoginDemo/Services/ApiService.cs" line="31" column="1" />
+      <Breakpoint file="/Users/osx/Desktop/Xamarin/Learnings/XamarinTutorialsapidone/LoginDemo/Services/ApiService.cs" relfile="LoginDemo/Services/ApiService.cs" line="35" column="1" />
+      <Breakpoint file="/Users/osx/Desktop/Xamarin/Learnings/XamarinTutorialsapidone/LoginDemo/Services/CallAPI.cs" relfile="LoginDemo/Services/CallAPI.cs" line="33" column="1" />
+      <Breakpoint file="/Users/osx/Desktop/Xamarin/Learnings/XamarinTutorialsapidone/LoginDemo/Services/CallAPI.cs" relfile="LoginDemo/Services/CallAPI.cs" line="32" column="1" />
+      <Breakpoint file="/Users/osx/Desktop/Xamarin/Learnings/XamarinTutorialsapidone/LoginDemo/Services/CallAPI.cs" relfile="LoginDemo/Services/CallAPI.cs" line="23" column="1" />
+      <Breakpoint file="/Users/osx/Desktop/Xamarin/Learnings/XamarinTutorialsapidone/LoginDemo/Services/CallAPI.cs" relfile="LoginDemo/Services/CallAPI.cs" line="31" column="1" />
+      <Breakpoint file="/Users/osx/Desktop/Xamarin/Learnings/XamarinTutorialsapidone/LoginDemo/Services/CallAPI.cs" relfile="LoginDemo/Services/CallAPI.cs" line="62" column="1" />
+      <Breakpoint file="/Users/osx/Desktop/Xamarin/Learnings/XamarinTutorialsapidone/LoginDemo/Services/CallAPI.cs" relfile="LoginDemo/Services/CallAPI.cs" line="63" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

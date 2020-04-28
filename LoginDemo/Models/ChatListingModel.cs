@@ -49,7 +49,6 @@ namespace LoginDemo.Models
             //detailPage.BindingContext = e.SelectedItem as Contact;
             detailPage.PlusButtonEventHandler += HandlePlusButtonCompletion;
             await App.Current.MainPage.Navigation.PushModalAsync(detailPage);
-
             ////create new object
             //var cd = new ChatDetail { Name = "Banku", Message = "ooo", MessageCount = "20", ReceivedStamp = "yesterday" };
             //Monkeys.Add(cd);
